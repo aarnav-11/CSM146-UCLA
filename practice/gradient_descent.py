@@ -16,9 +16,11 @@ from sklearn.preprocessing import MinMaxScaler, OneHotEncoder
 from sklearn.datasets import load_breast_cancer
 from sklearn.model_selection import train_test_split
 
-medical_charges_url = 'https://raw.githubusercontent.com/JovianML/opendatasets/master/data/medical-charges.csv'
-#storing the data into a dataframe
-medical_df = pd.read_csv(medical_charges_url)
-print(medical_df.head())
+
+housing_dataset = "Housing.csv"
+housing_df = pd.read_csv(housing_dataset)
+
+print(housing_df.head())
 
 # print(medical_df.shape) #1338 by 7 so 7 features and 1338 datapoints
+
